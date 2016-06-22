@@ -1,7 +1,7 @@
 {
   "name": "static-portfolio",
   "version": "1.0.0",
-  "description": "My first static site with Jekyll",
+  "description": "Portfolio with Jekyll",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,10 +11,7 @@
     "url": "git+https://github.com/evertontatu/static-portfolio.git"
   },
   "keywords": [
-    "Portfolio",
-    "Jekyll",
-    "Front",
-    "End"
+    "Jekyll"
   ],
   "author": "Everton Boni",
   "license": "ISC",
@@ -23,8 +20,6 @@
   },
   "homepage": "https://github.com/evertontatu/static-portfolio#readme",
   "devDependencies": {
-    "bower": "^1.7.9",
-    "gulp": "^3.9.1",
-    "jquery": "^3.0.0"
+    "bower": "^1.7.9"
   }
 }
