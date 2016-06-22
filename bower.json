@@ -1,15 +1,12 @@
 {
   "name": "static-portfolio",
-  "description": "Portfolio with Jekyll",
-  "main": "index.js",
+  "description": "Portfolio static with jekyll",
+  "main": "index.html",
   "authors": [
     "Everton Boni"
   ],
   "license": "ISC",
-  "keywords": [
-    "Jekyll"
-  ],
-  "homepage": "www.evertonboni.com.br",
+  "homepage": "https://github.com/evertontatu/static-portfolio",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -18,9 +15,6 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-    "jquery": "^3.0.0"
-  },
   "devDependencies": {
     "jquery": "^3.0.0"
   }
