@@ -1,0 +1,1 @@
+$(".nav-toggle").click(function(){var a=$(".nav ul").height();$(".nav").hasClass("fechada")?$(".nav").animate({height:a},{queue:!1,duration:200}).removeClass("fechada"):$(".nav").animate({height:"0px"},{queue:!1,duration:200}).addClass("fechada")});
