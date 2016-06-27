@@ -9,18 +9,17 @@ gulp.task('scripts', function () {
     gulp.src('js/**/*.js')
         .pipe(concat('scripts.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('sass', function () {
-  return
-    sass('_sass/style.scss')
+  return sass('_sass/**/*.scss')
       .pipe(autoprefixer())
       .pipe(minifyCss())
-      .pipe(gulp.dest('dist'));
+      .pipe(gulp.dest('dist/css'));
 });
 
 gulp.task('default', ['scripts', 'sass'], function () {
     gulp.watch('js/**/*.js', ['scripts']);
-    gulp.watch('_sass/*.{sass,scss}', ['sass']);
+    gulp.watch('_sass/**/*.{sass,scss}', ['sass']);
 });
