@@ -9,6 +9,12 @@ a:active{text-decoration:none; color:inherit;}
 
 body {
 	font-size: 62.5%;
+  background-color: $brand-color;
+}
+
+.social-media-list li{
+  width: 60px;
+  color: #fff;
 }
 
 /*!
