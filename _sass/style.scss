@@ -9,13 +9,6 @@ a:active{text-decoration:none; color:inherit;}
 
 body {
   font-size: 62.5%;
-  background-color: #e9a34b;
-}
-
-h1{
-  font-size: 1.6em;
-  color: black;
-  font-family: "leaguegothic";
 }
 
 .page{
@@ -24,30 +17,62 @@ h1{
   background-color: #ccc;
 }
 
-.home{
-  width: 100%;
-  height: 100%;
-  background-color: black;
+@font-face {
+	font-family: "leaguegothic";
+	src: url("../css/fonts/leaguegothic-regular-webfont.eot") format("embedded-opentype"),
+	url("../css/fonts/leaguegothic-regular-webfont.woff") format("woff"),
+	url("../css/fonts/leaguegothic-regular-webfont.ttf") format("truetype");
+	font-style:normal;
 }
 
 @font-face {
-	font-family: "leaguegothic";
-	src: url("css/fonts/leaguegothic-regular-webfont.eot") format("embedded-opentype"),
-	url("css/fonts/leaguegothic-regular-webfont.woff") format("woff"),
-	url("css/fonts/leaguegothic-regular-webfont.ttf") format("truetype");
-	font-style:normal;
+	font-family: "nexaLight";
+	src: url("../css/fonts/nexaLight.otf");
+}
+
+h1{
+  font-size: 4em;
+  color: white;
+  font-family: "leaguegothic";
+  text-transform: uppercase;
+}
+
+.home{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content:flex-start;
+  flex-direction: column;
+  background-color: black;
 }
 
 .logo-evertonboni{
   width:300px;
-  left: 50%;
-  margin-left: -150px;
-  position: absolute;
+  margin: 0 auto;
   margin-top: 20px;
+}
+
+nav{
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+nav ul li{
+  display:inline-block;
+  margin: 0 40px;
+}
+
+@media screen and (min-width: 319px) and (max-width: 719px){
+  .logo-evertonboni{ width: 200px; margin: 20px 0 0 10px;}
+  nav{background-color: $brand-color; width: 100%;}
+  nav ul li{display: flex; margin: 0; justify-content: center; background-color:  $brand-color; padding: 20px;}
+  nav{margin-top: 20px;}
 }
 
 nav ul li a{
   color: #fff;
+  font-family: "nexaLight";
+  font-size: 1.6em;
 }
 
 /*!
