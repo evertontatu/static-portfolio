@@ -6,6 +6,7 @@ var cp          = require('child_process');
 var concat      = require('gulp-concat');
 var uglify      = require('gulp-uglify');
 var minifyCss   = require('gulp-minify-css');
+var imageop = require('gulp-image-optimization');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -63,6 +64,14 @@ gulp.task('scripts', function () {
     .pipe(gulp.dest('_site/js'));
 });
 
+gulp.task('images', function(cb) {
+    gulp.src(['images/**/*.png','images/**/*.jpg','images/**/*.gif','images/**/*.jpeg']).pipe(imageop({
+        optimizationLevel: 5,
+        progressive: true,
+        interlaced: true
+    })).pipe(gulp.dest('_site/images/images')).on('end', cb).on('error', cb);
+});
+
 /**
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
@@ -70,6 +79,7 @@ gulp.task('scripts', function () {
 gulp.task('watch', function () {
   gulp.watch('_sass/*.scss', ['sass']);
   gulp.watch('js/**/*.js', ['scripts']);
+  gulp.watch('images/**', ['images']);
   gulp.watch(['*.html', '_layouts/*.html', '_posts/*', '_includes/*.html'], ['jekyll-rebuild']);
 });
 
