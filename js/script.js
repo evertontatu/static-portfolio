@@ -14,5 +14,5 @@ $(function(){
 	var widthDevice = $(window).width();
 	var heightDevice = $(window).height();
 
-	$('.page').css('height', heightDevice);
+	$('.home').css('height', heightDevice);
 });
