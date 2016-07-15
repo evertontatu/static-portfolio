@@ -13,7 +13,6 @@ body {
 
 .page{
   position:relative;
-  float: left;
   background-color: #ccc;
   width: 100%;
 }
@@ -72,11 +71,19 @@ p{
 
 .sobre{
   width: 100%;
-  height:100%;
+  height: 100%;
   display: flex;
   justify-content:flex-start;
   flex-direction: column;
-  background: url(../images/bg-sobre.jpg) center top no-repeat;
+  background: url(../images/bg-sobre.jpg) center top no-repeat $azulBrand;
+}
+
+.contato{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content:flex-start;
+  flex-direction: column;
 }
 
 .logo-evertonboni{
