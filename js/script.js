@@ -17,3 +17,11 @@ $(function(){
 	$('.home, .sobre').css('height', heightDevice);
 	$('.contato, .portfolio, .site-footer').css('height', heightDevice/2);
 });
+
+$(function(){
+
+	$('.menu-mobile').click(function() {
+		$('#nav').css('display', flex);
+	})
+
+});
