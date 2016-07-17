@@ -11,10 +11,12 @@ body {
   font-size: 62.5%;
 }
 
-.page{
-  position:relative;
-  background-color: #ccc;
-  width: 100%;
+.wrapper{
+  width: auto;
+  max-width: 1140px;
+  float: none;
+  display: block;
+  text-align: center;
 }
 
 @font-face {
