@@ -107,6 +107,7 @@ button{
     justify-content:flex-start;
     flex-direction: column;
     background: url(../images/background-home.jpg) center top no-repeat;
+    background-attachment: fixed;
   }
 
   .logoMenu{
@@ -117,7 +118,7 @@ button{
     height: 50px;
   }
 
-//PERFIL
+//SOBRE
   .sobre{
     width: 100%;
     height: 100%;
@@ -136,6 +137,16 @@ button{
 
   .txtWhite{
     color: white;
+  }
+
+  .box-social-icon{
+    border: 3px white solid;
+    height: 330px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
   }
 
 .contato{
