@@ -264,15 +264,17 @@ nav ul li a{
 
 @media screen and (min-width: 319px) and (max-width: 719px) {
 
+  section{padding: 50px 0 20px 0;}
+
   .row {
-      margin-left:-12px;
+      margin-left:-20px;
   }
   .row-especial{
       margin-left: 0;
   }
   .col {
-      border-left-width:12px;
-      padding:0 12px;
+      border-left-width:20px;
+      padding:0 20px;
   }
   .col-especial{
       border-left-width:0;
@@ -284,6 +286,28 @@ nav ul li a{
   }
   .span_2 {
       width:66.6666666667%;
+  }
+  .span_2-sobre {
+      width:100%;
+  }
+  .perfil{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .perfil img{
+    width: 180px;
+  }
+  .perfil p{
+    text-align: center;
+  }
+  .box-social-icon{
+    flex-direction:row;
+    height: auto;
+    margin: 20px 0 0 0;
+    padding: 20px;
   }
   .span_3 {
       margin-left:0;
@@ -301,19 +325,21 @@ nav ul li a{
 }
 
 
-@media screen and (min-width: 720px) and (max-width: 1139px) {
+@media screen and (min-width: 720px) and (max-width: 999px) {
 
   .space-mobile{padding: 60px 0;}
 
+  section{padding: 50px 0 20px 0;}
+
   .row {
-      margin-left:-12px;
+      margin-left:-20px;
   }
   .row-especial{
       margin-left: 0;
   }
   .col {
-      border-left-width:12px;
-      padding:0 12px;
+      border-left-width:20px;
+      padding:0 20px;
   }
   .col-especial{
       border-left-width:0;
@@ -326,6 +352,29 @@ nav ul li a{
   .span_2 {
       width:33.3333333333%;
   }
+  .span_2-sobre {
+      width:100%;
+  }
+  .perfil{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .perfil img{
+    width: 180px;
+  }
+  .perfil p{
+    text-align: center;
+  }
+  .box-social-icon{
+    flex-direction:row;
+    height: auto;
+    margin: 20px 0 0 0;
+    padding: 20px;
+  }
+
   .span_3 {
       width:50.0%;
   }
@@ -349,17 +398,17 @@ nav ul li a{
   }
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1000px) {
 
   .row {
-      margin-left:-12px;
+      margin-left:-20px;
   }
   .row-especial{
       margin-left: 0;
   }
   .col {
-      border-left-width:12px;
-      padding:0 12px;
+      border-left-width:20px;
+      padding:0 20px;
   }
   .col-especial{
       border-left-width:0;
@@ -370,6 +419,9 @@ nav ul li a{
       width:8.33333333333%;
   }
   .span_2 {
+      width:16.6666666667%;
+  }
+  .span_2-sobre {
       width:16.6666666667%;
   }
   .span_3 {
@@ -388,6 +440,9 @@ nav ul li a{
       width:58.3333333333%;
   }
   .span_8 {
+      width:66.6666666667%;
+  }
+  .span_8-sobre {
       width:66.6666666667%;
   }
   .span_9 {
