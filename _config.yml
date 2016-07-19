@@ -13,6 +13,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://evertonboni.com.br" # the base hostname & protocol for your site
 twitter_username: evertonboni
 github_username:  evertontatu
+linkedin_username: everton-boni-92ab7553
+behance_username: evertonboni
 
 # Build settings
 markdown: kramdown

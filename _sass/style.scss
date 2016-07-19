@@ -133,6 +133,7 @@ button{
     width:100%;
     border-radius: 50%;
     border: $laranjaBrand 4px solid;
+    margin-bottom: 10px;
   }
 
   .txtWhite{
@@ -145,8 +146,19 @@ button{
     padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
-    align-items: center;
+    justify-content:space-around;
+  }
+
+  .flex-item{
+    flex: 1;
+  }
+
+  .icon-social{
+    width: 50px;
+  }
+
+  .icon-social path{
+    fill:white;
   }
 
 .contato{
