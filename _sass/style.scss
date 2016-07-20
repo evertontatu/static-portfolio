@@ -66,6 +66,10 @@ h2::before{
   color: $laranjaBrand;
 }
 
+.titleDark{
+  color: $azulBrand;
+}
+
 p{
   font-family: $font-brand-text;
   font-size: 1.6em;
@@ -170,13 +174,19 @@ button{
   background-color: $verdeBrand;
 }
 
-.portfolio{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content:flex-start;
-  flex-direction: column;
-}
+//PORTFOLIO
+  .portfolio{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+  }
+
+  .box-portfolio{
+    height: 250px;
+    background-color: $azulBrand;
+  }
 
 .logo-evertonboni{
   width:300px;
