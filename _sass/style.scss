@@ -164,6 +164,7 @@ button{
   .icon-social path{
     fill:white;
   }
+
 //CONTATO
   .contato{
     width: 100%;
@@ -199,7 +200,47 @@ button{
 
   .box-portfolio{
     height: 250px;
+    padding-bottom: 20px;
     background-color: $azulBrand;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content:flex-end;
+
+    h3{
+      font-family: $font-brand-title;
+      color:white;
+      font-size: 1.8em;
+      text-transform: uppercase;
+      text-align: left;
+      margin-top: 20px;
+      position: absolute;
+      transition: 200ms all ease-in-out;
+    }
+
+    p{
+      font-family: $font-brand-text;
+      color: white;
+      font-size: 1.6em;
+      margin: 3px 3px 0 3px;
+      padding: 0 7px;
+      background-color: $laranjaBrand;
+      float: left;
+      opacity: 0;
+      transition: 300ms all ease-in-out;
+    }
+
+    p:first-child{
+      margin-left: 0;
+    }
+  }
+
+  .box-portfolio:hover p{
+    opacity: 1;
+  }
+
+  .box-portfolio:hover h3{
+    margin-top: -20px;
   }
 
 .logo-evertonboni{
@@ -298,7 +339,7 @@ nav ul li a{
   }
   .col {
       border-left-width:20px;
-      padding:0 20px;
+      padding:20px;
   }
   .col-especial{
       border-left-width:0;
@@ -363,7 +404,7 @@ nav ul li a{
   }
   .col {
       border-left-width:20px;
-      padding:0 20px;
+      padding:20px;
   }
   .col-especial{
       border-left-width:0;
@@ -432,7 +473,7 @@ nav ul li a{
   }
   .col {
       border-left-width:20px;
-      padding:0 20px;
+      padding:20px;
   }
   .col-especial{
       border-left-width:0;
