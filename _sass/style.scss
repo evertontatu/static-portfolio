@@ -235,11 +235,14 @@ button:hover{
       font-family: $font-brand-title;
       color:white;
       font-size: 1.8em;
+      line-height: 2em;
       text-transform: uppercase;
       text-align: left;
-      margin-top: 20px;
       position: absolute;
       transition: 200ms all ease-in-out;
+      margin: -7px 3px 3px 0 0;
+      padding: 0 7px;
+      background-color: $azulBrand;
     }
 
     p{
@@ -259,6 +262,18 @@ button:hover{
     }
   }
 
+  .capa01{
+      background: url(../images/portfolio-phenomenal.jpg);
+  }
+
+    .capa02{
+        background: url(../images/portfolio-ie.jpg);
+    }
+
+    .capa03{
+        background:url(../images/portfolio-alinebretas.jpg);
+    }
+
   .box-portfolio:hover{
       cursor: pointer;
   }
@@ -268,7 +283,7 @@ button:hover{
   }
 
   .box-portfolio:hover .capa-portfolio h3{
-    margin-top: -20px;
+    margin-top: -37px;
   }
 
  .capa-portfolio + div{
