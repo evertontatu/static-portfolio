@@ -22,9 +22,7 @@ $laranjaBrand:     #e05841;
 $verdeBrand:       #20a863;
 $whiteColor:       #fff;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$greyColor:  #4a545a;
 
 // Width of the content area
 $content-width:    800px;
@@ -54,6 +52,6 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
+        "reset",
         "style"
 ;

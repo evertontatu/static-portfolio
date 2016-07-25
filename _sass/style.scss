@@ -84,6 +84,10 @@ p{
   color: $whiteColor;
 }
 
+.greyColor{
+    color:$greyColor;
+}
+
 section{
   padding: 100px 0;
 }
@@ -196,16 +200,18 @@ button{
     display: flex;
     justify-content:flex-start;
     flex-direction: column;
+    background-color: #eef2f5;
   }
 
-  .box-portfolio{
+  .capa-portfolio{
     height: 250px;
-    padding-bottom: 20px;
+    padding: 20px;
     background-color: $azulBrand;
     display: flex;
     flex-direction: column;
     align-items: baseline;
     justify-content:flex-end;
+    border-radius: 3px 3px 0 0;
 
     h3{
       font-family: $font-brand-title;
@@ -235,13 +241,31 @@ button{
     }
   }
 
-  .box-portfolio:hover p{
+  .box-portfolio:hover{
+      cursor: pointer;
+  }
+
+  .box-portfolio:hover .capa-portfolio p{
     opacity: 1;
   }
 
-  .box-portfolio:hover h3{
+  .box-portfolio:hover .capa-portfolio h3{
     margin-top: -20px;
   }
+
+ .capa-portfolio + div{
+     padding: 20px;
+     box-shadow: 0 2px 0 #D9E1E7;
+ }
+
+ .box-portfolio{
+     background-color: white;
+ }
+
+ .box-portfolio p{
+     color: $font-brand-text;
+     margin-bottom: 0;
+ }
 
 .logo-evertonboni{
   width:300px;
@@ -342,7 +366,7 @@ nav ul li a{
       padding:20px;
   }
   .col-especial{
-      border-left-width:0;
+      border-left-width:20px;
       padding:0;
   }
 
@@ -407,7 +431,7 @@ nav ul li a{
       padding:20px;
   }
   .col-especial{
-      border-left-width:0;
+      border-left-width:20px;
       padding:0;
   }
 
@@ -476,7 +500,7 @@ nav ul li a{
       padding:20px;
   }
   .col-especial{
-      border-left-width:0;
+      border-left-width:20px;
       padding:0;
   }
 
