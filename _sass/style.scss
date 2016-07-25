@@ -103,8 +103,15 @@ button{
   line-height: 1.6em;
   letter-spacing:2px;
   float: left;
-  border-bottom: 3px solid darken($verdeBrand, 20%);
+  border-bottom: 3px solid darken($verdeBrand, 10%);
   outline: none;
+  transition: 200ms all ease-in-out;
+}
+
+button:hover{
+    background-color: lighten( $verdeBrand ,10%);
+    border-bottom: 3px solid $verdeBrand;
+    cursor:pointer;
 }
 
 //HOME
@@ -163,10 +170,21 @@ button{
 
   .icon-social{
     width: 50px;
+    transform: scaleX(1.0);
+    transition: 200ms ease-in-out all;
   }
 
   .icon-social path{
     fill:white;
+    transition: 200ms ease-in-out all;
+  }
+
+  .icon-social:hover{
+      transform: scale(1.2);
+  }
+
+  .icon-social:hover path{
+      fill:$verdeBrand;
   }
 
 //CONTATO
