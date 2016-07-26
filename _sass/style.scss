@@ -23,96 +23,172 @@ body {
   .wrapper{width: 100%;}
 }
 
-@font-face {
-	font-family: "leaguegothic";
-	src: url("../css/fonts/leaguegothic-regular-webfont.eot") format("embedded-opentype"),
-	url("../css/fonts/leaguegothic-regular-webfont.woff") format("woff"),
-	url("../css/fonts/leaguegothic-regular-webfont.ttf") format("truetype");
-	font-style:normal;
-}
+//FONTES
+  @font-face {
+  	font-family: "leaguegothic";
+  	src: url("../css/fonts/leaguegothic-regular-webfont.eot") format("embedded-opentype"),
+  	url("../css/fonts/leaguegothic-regular-webfont.woff") format("woff"),
+  	url("../css/fonts/leaguegothic-regular-webfont.ttf") format("truetype");
+  	font-style:normal;
+  }
 
-@font-face {
-	font-family: "nexaLight";
-	src: url("../css/fonts/nexaLight.otf");
-}
+  @font-face {
+  	font-family: "nexaLight";
+  	src: url("../css/fonts/nexaLight.otf");
+  }
 
-@font-face {
-	font-family: "nexaBold";
-	src: url("../css/fonts/nexaBold.otf");
-}
+  @font-face {
+  	font-family: "nexaBold";
+  	src: url("../css/fonts/nexaBold.otf");
+  }
 
-h1{
-  font-size: 3em;
-  font-family: $font-brand-title;
-  text-transform: uppercase;
-}
+  h1{
+    font-size: 3em;
+    font-family: $font-brand-title;
+    text-transform: uppercase;
+  }
 
-h1::before{
+  h1::before{
+      content: "|| ";
+      color:$verdeBrand;
+  }
+
+  h2{
+    font-size: 3em;
+    font-family: $font-brand-title;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+  }
+
+  h2::before{
     content: "|| ";
-    color:$verdeBrand;
-}
+    color: $laranjaBrand;
+  }
 
-h2{
-  font-size: 3em;
-  font-family: $font-brand-title;
-  text-transform: uppercase;
-  color: white;
-  margin-bottom: 50px;
-  letter-spacing: 2px;
-}
+  .titleDark{
+    color: $azulBrand;
+  }
 
-h2::before{
-  content: "|| ";
-  color: $laranjaBrand;
-}
+  p{
+    font-family: $font-brand-text;
+    font-size: 1.6em;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 1.8em;
+    margin-bottom:25px;
+  }
 
-.titleDark{
-  color: $azulBrand;
-}
+  .whiteColor{
+    color: $whiteColor;
+  }
 
-p{
-  font-family: $font-brand-text;
-  font-size: 1.6em;
-  letter-spacing: 1px;
-  text-align: left;
-  text-transform: uppercase;
-  line-height: 1.8em;
-  margin-bottom:25px;
-}
+  .greyColor{
+      color:$greyColor;
+  }
 
-.whiteColor{
-  color: $whiteColor;
-}
 
-.greyColor{
-    color:$greyColor;
-}
+//ESTRUTURA CONTEUDO
+  section{
+    padding: 100px 0;
+  }
 
-section{
-  padding: 100px 0;
-}
+  button{
+    padding: 15px 25px;
+    background-color: $verdeBrand;
+    color: white;
+    border: none;
+    font-family: $font-brand-title;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    line-height: 1.6em;
+    letter-spacing:2px;
+    float: left;
+    border-bottom: 3px solid darken($verdeBrand, 10%);
+    outline: none;
+    transition: 200ms all ease-in-out;
+  }
 
-button{
-  padding: 15px 25px;
-  background-color: $verdeBrand;
-  color: white;
-  border: none;
-  font-family: $font-brand-title;
-  text-transform: uppercase;
-  font-size: 1.6em;
-  line-height: 1.6em;
-  letter-spacing:2px;
-  float: left;
-  border-bottom: 3px solid darken($verdeBrand, 10%);
-  outline: none;
-  transition: 200ms all ease-in-out;
-}
-
-button:hover{
+  button:hover{
     background-color: lighten( $verdeBrand ,10%);
     border-bottom: 3px solid $verdeBrand;
     cursor:pointer;
-}
+  }
+
+  .logo-evertonboni{
+    width:300px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+//HEADER
+  nav{
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  nav ul li{
+    display:inline-block;
+    margin: 0 3px;
+  }
+
+  nav ul li a div{
+    background-color: $verdeBrand;
+    padding: 5px 30px;
+  }
+
+  .menu-mobile{
+    display:none;
+  }
+
+  @media screen and (min-width: 319px) and (max-width: 719px){
+    .logo-evertonboni{ width: 200px; margin-left:10px;}
+    nav{background-color: $azulBrand; width: 100%;}
+    nav ul li{display: flex; margin: 0; justify-content: center; background-color:  $brand-color; padding: 20px;}
+    nav{margin-top: 20px; display: none;}
+    .home{
+      width: 100%;
+      height: 100%;
+      display: block;
+      justify-content:flex-start;
+      flex-direction: column;
+      background-color: black;
+    }
+    .menu-mobile{display: block; width: 20px; margin: 20px 20px 0 0;}
+    .menu-mobile path{fill: #fff;}
+  }
+
+  nav ul li a{
+    color: #fff;
+    font-family: "nexaLight";
+    font-size: 1.6em;
+  }
+
+  .homeCenter{
+    height:100%;
+    text-align: center;
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    p{
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      top: 98%;
+      left:50%;
+      margin: -25px 0 0 -25px;
+    }
+    h1{
+      position: absolute;
+      height: 24px;
+      width: 500px;
+      top: 50%;
+      left: 50%;
+      margin: -12px 0 0 -250px;
+    }
+  }
 
 //HOME
   .home{
@@ -266,13 +342,13 @@ button:hover{
       background: url(../images/portfolio-phenomenal.jpg);
   }
 
-    .capa02{
-        background: url(../images/portfolio-ie.jpg);
-    }
+  .capa02{
+      background: url(../images/portfolio-ie.jpg);
+  }
 
-    .capa03{
-        background:url(../images/portfolio-alinebretas.jpg);
-    }
+  .capa03{
+      background:url(../images/portfolio-alinebretas.jpg);
+  }
 
   .box-portfolio:hover{
       cursor: pointer;
@@ -300,62 +376,7 @@ button:hover{
      margin-bottom: 0;
  }
 
-.logo-evertonboni{
-  width:300px;
-  margin: 0 auto;
-  margin-top: 20px;
-}
 
-nav{
-  margin: 0 auto;
-  margin-top: 50px;
-}
-
-nav ul li{
-  display:inline-block;
-  margin: 0 40px;
-}
-
-.menu-mobile{
-  display:none;
-}
-
-@media screen and (min-width: 319px) and (max-width: 719px){
-  .logo-evertonboni{ width: 200px; margin-left:10px;}
-  nav{background-color: $azulBrand; width: 100%;}
-  nav ul li{display: flex; margin: 0; justify-content: center; background-color:  $brand-color; padding: 20px;}
-  nav{margin-top: 20px; display: none;}
-  .home{
-    width: 100%;
-    height: 100%;
-    display: block;
-    justify-content:flex-start;
-    flex-direction: column;
-    background-color: black;
-  }
-  .menu-mobile{display: block; width: 20px; margin: 20px 20px 0 0;}
-  .menu-mobile path{fill: #fff;}
-}
-
-nav ul li a{
-  color: #fff;
-  font-family: "nexaLight";
-  font-size: 1.6em;
-}
-
-.homeCenter{
-  height:100%;
-  text-align: center;
-  display: flex;
-  justify-content:flex-start;
-  flex-direction: column;
-  justify-content:space-around;
-}
-
-.setaDown{
-  flex: 1;
-  text-align: center;
-}
 
 
 
