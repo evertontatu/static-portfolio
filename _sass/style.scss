@@ -177,13 +177,17 @@ body {
     display: flex;
     justify-content:flex-start;
     flex-direction: column;
-    p{
+    svg{
       position: absolute;
-      height: 50px;
-      width: 50px;
-      top: 98%;
+      height: 30px;
+      width: 30px;
+      top: 94%;
       left:50%;
-      margin: -25px 0 0 -25px;
+      margin: -15px 0 0 -15px;
+      opacity: .5;
+    }
+    svg path{
+      fill:white;
     }
     h1{
       position: absolute;
