@@ -33,7 +33,7 @@
   }
   .col-especial{
       border-left-width:10px;
-      padding:10px;
+      padding:0;
   }
 
   .span_1 {
@@ -98,7 +98,7 @@
   }
   .col-especial{
       border-left-width:10px;
-      padding:10px;
+      padding:0;
   }
 
   .span_1 {
@@ -137,7 +137,8 @@
       width:66.6666666667%;
   }
   .span_4-portfolio {
-      width:66.6666666667%;
+      max-width:66.6666666667%;
+      margin-top:10px;
   }
   .span_5 {
       width:100%;
@@ -170,7 +171,7 @@
   }
   .col-especial{
       border-left-width:10px;
-      padding:10px;
+      padding:0;
   }
 
   .span_1 {
@@ -189,7 +190,7 @@
       width:33.3333333333%;
   }
   .span_4-portfolio {
-      width:33.3333333333%;
+      max-width:33.3333333333%;
   }
   .span_5 {
       width:41.6666666667%;
