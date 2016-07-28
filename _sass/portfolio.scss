@@ -1,0 +1,88 @@
+//PORTFOLIO
+  .portfolio{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    background-color: #eef2f5;
+  }
+
+  .capa-portfolio{
+    height: 250px;
+    padding: 20px;
+    background-color: $azulBrand;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content:flex-end;
+    border-radius: 3px 3px 0 0;
+
+    h3{
+      font-family: $font-brand-title;
+      color:white;
+      font-size: 1.8em;
+      line-height: 2em;
+      text-transform: uppercase;
+      text-align: left;
+      position: absolute;
+      transition: 200ms all ease-in-out;
+      margin: -7px 3px 3px 0 0;
+      padding: 0 7px;
+      background-color: $azulBrand;
+    }
+
+    p{
+      font-family: $font-brand-text;
+      color: white;
+      font-size: 1.6em;
+      margin: 3px 3px 0 3px;
+      padding: 0 7px;
+      background-color: $laranjaBrand;
+      float: left;
+      opacity: 0;
+      transition: 300ms all ease-in-out;
+    }
+
+    p:first-child{
+      margin-left: 0;
+    }
+  }
+
+  .capa01{
+      background: url(../images/portfolio-phenomenal.jpg);
+  }
+
+  .capa02{
+      background: url(../images/portfolio-ie.jpg);
+  }
+
+  .capa03{
+      background:url(../images/portfolio-alinebretas.jpg);
+  }
+
+  .box-portfolio:hover{
+      cursor: pointer;
+  }
+
+  .box-portfolio:hover .capa-portfolio p{
+    opacity: 1;
+  }
+
+  .box-portfolio:hover .capa-portfolio h3{
+    margin-top: -37px;
+  }
+
+ .capa-portfolio + div{
+     padding: 20px;
+     box-shadow: 0 2px 0 #D9E1E7;
+ }
+
+ .box-portfolio{
+     background-color: white;
+ }
+
+ .box-portfolio p{
+     color: $font-brand-text;
+     margin-bottom: 0;
+ }

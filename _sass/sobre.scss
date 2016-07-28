@@ -1,0 +1,53 @@
+//SOBRE
+  .sobre{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    background: url(../images/bg-sobre.jpg) center top no-repeat $azulBrand;
+    background-size: contain;
+  }
+
+  .perfil img{
+    width:100%;
+    border-radius: 50%;
+    border: $laranjaBrand 4px solid;
+    margin-bottom: 10px;
+  }
+
+  .txtWhite{
+    color: white;
+  }
+
+  .box-social-icon{
+    border: 3px white solid;
+    height: 330px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+  }
+
+  .flex-item{
+    flex: 1;
+  }
+
+  .icon-social{
+    width: 50px;
+    transform: scaleX(1.0);
+    transition: 200ms ease-in-out all;
+  }
+
+  .icon-social path{
+    fill:white;
+    transition: 200ms ease-in-out all;
+  }
+
+  .icon-social:hover{
+      transform: scale(1.2);
+  }
+
+  .icon-social:hover path{
+      fill:$verdeBrand;
+  }
