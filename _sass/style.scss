@@ -43,14 +43,13 @@ body {
   }
 
   h1{
-    font-size: 3em;
+    font-size: 6em;
     font-family: $font-brand-title;
     text-transform: uppercase;
   }
 
   h1::before{
-      content: "|| ";
-      color:$laranjaBrand;
+      content: "";
   }
 
   h2{
@@ -173,29 +172,30 @@ body {
 
   .homeCenter{
     height:100%;
+    width: 100%;
     text-align: center;
     display: flex;
-    justify-content:flex-start;
+    justify-content:space-around;;
     flex-direction: column;
+    align-items: center;
     svg{
-      position: absolute;
-      height: 30px;
-      width: 30px;
-      top: 94%;
-      left:50%;
-      margin: -15px 0 0 -15px;
-      opacity: .5;
+      height: 60px;
+      width: 60px;
+      animation: setaDown infinit;
+      margin-top: 30px;
     }
     svg path{
       fill:white;
     }
     h1{
-      position: absolute;
-      height: 24px;
+      height: 80px;
       width: 500px;
-      top: 50%;
-      left: 50%;
-      margin: -12px 0 0 -250px;
+    }
+  }
+
+  @keyframes setaDown{
+    20%{
+      top:10px;
     }
   }
 
