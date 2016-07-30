@@ -19,6 +19,8 @@ behance_username: evertonboni
 # Build settings
 markdown: kramdown
 
+permalink: /:title
+
 port: 8080
 
 # exclude my node related stuff
