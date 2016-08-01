@@ -5,7 +5,11 @@
     display: flex;
     justify-content:flex-start;
     flex-direction: column;
-    background-color: $verdeBrand;
+    background-color: black;
+
+    div > p{
+      text-align: center;
+    }
   }
 
   form{

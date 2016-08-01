@@ -60,6 +60,10 @@
     }
   }
 
+  @media (max-width:800px){
+    .homeCenter{h1{width:100%; padding:10px;}}
+  }
+
   @-webkit-keyframes setaDown{
     20%{
       top:10px;
