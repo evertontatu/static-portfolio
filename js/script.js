@@ -73,3 +73,15 @@ $(function(){
 	    }
 	}
 });
+
+//SCROLL MENU FIXED
+$(function(){
+	var posicaoInicial = $('.homeCenter').position().top;
+
+	$(document).scroll(function () { // oscultador de scroll
+    	var posicaoScroll = $(document).scrollTop(); // obtem a quantidade de scroll no momento
+    	console.log(posicaoScroll);
+    	if (posicaoScroll > '180') $('.logoMenu, nav').css('position','fixed');
+    	if (posicaoScroll < '180') $('.logoMenu, nav').css('position','relative');
+	})
+});
