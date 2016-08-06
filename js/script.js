@@ -81,7 +81,15 @@ $(function(){
 	$(document).scroll(function () { // oscultador de scroll
     	var posicaoScroll = $(document).scrollTop(); // obtem a quantidade de scroll no momento
     	console.log(posicaoScroll);
-    	if (posicaoScroll > '180') $('.home > div').addClass('menuFixed');
-    	if (posicaoScroll < '180') $('.home > div').removeClass('menuFixed');
-	})
+    	if (posicaoScroll > '180') {
+    		$('.menu').addClass('menuFixed');
+    		$('.logo-evertonboni').addClass('menuScrollDown');
+    		$('nav').addClass('menuScrollDown');
+    	}
+    	if (posicaoScroll < '180') {
+    		$('.menu').removeClass('menuFixed');
+    		$('.logo-evertonboni').removeClass('menuScrollDown');
+    		$('nav').removeClass('menuScrollDown');
+    	}
+	});
 });
