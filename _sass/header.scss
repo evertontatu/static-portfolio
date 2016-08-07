@@ -72,6 +72,7 @@
     justify-content: space-between;
     -ms-justify-content: space-between;
     -moz-justify-content: space-between;
+    transform: transtale(100px, 90px);
   }
 
   .menu-mobile{
@@ -99,13 +100,13 @@
     height:100%;
     width: 100%;
     text-align: center;
-    display: flex;
-    justify-content:space-around;;
-    flex-direction: column;
-    align-items: center;
     h1{
       height: 250px;
       width: 800px;
+      position: absolute;
+      left: 50%;
+      margin-left: -400px;
+      margin-top: 200px;
     }
   }
 
