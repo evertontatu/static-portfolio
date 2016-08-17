@@ -21,6 +21,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: 300ms ease-in-out all;
+  }
+
+  .menuFixed{
+    position: fixed;
+    z-index: 888;
+    background-color: $azulBrand;
+    width: 100%;
+    height: 70px;
+    transition: 300ms ease-in-out all;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    justify-content: space-between;
+    -ms-justify-content: space-between;
   }
 
   .logo-evertonboni{
@@ -29,14 +43,19 @@
     margin-top: 40px;
   }
 
+  .menuLitle{
+    width: 230px;
+  }
+
   .menuScrollDown{
-    margin: 20px;
+    margin: 10px;
   }
 
   nav{
     margin: 0 auto;
     margin-top: 100px;
     z-index: 999;
+    transition: 300ms ease-in-out all;
   }
 
   nav ul li{
@@ -58,20 +77,6 @@
       color:white;
       border-bottom: 3px solid $laranjaBrand;
     }
-  }
-
-  .menuFixed{
-    position: fixed;
-    z-index: 888;
-    background-color: $azulBrand;
-    width: 100%;
-    height: 100px;
-    flex-direction: row;
-    -ms-flex-direction: row;
-    -moz-flex-direction: row;
-    justify-content: space-between;
-    -ms-justify-content: space-between;
-    -moz-justify-content: space-between;
   }
 
   .menu-mobile{
