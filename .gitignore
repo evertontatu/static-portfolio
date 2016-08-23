@@ -3,3 +3,6 @@ _site
 .jekyll-metadata
 /node_modules
 /libs
+submit.php
+submit0.php
+_includes/submit.php
