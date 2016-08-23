@@ -1,3 +1,4 @@
+<script type="text/javascript">console.log("ei bro!")</script>
 <?php
 
 require 'phpmailer/class.phpmailer.php';
@@ -19,9 +20,10 @@ $resposta->IsSMTP();                                      // Set mailer to use S
 $resposta->Host = 'ssl://smtp.gmail.com';                 // Specify main and backup server
 $resposta->Port = 465;                                    // Set the SMTP port
 $resposta->SMTPAuth = true;                               // Enable SMTP authentication
-$resposta->Username = 'evertonferreira.de@gmail.com';                // SMTP username
-$resposta->Password = 'ferreira2131626';                  // SMTP password
-$resposta->SMTPSecure = 'tls';                            // Enable encryption, 'ssl' also accepted
+$resposta->Username = 'evertonferreira.de@gmail.com';     // SMTP username
+$resposta->Password = 'ferreira2131626';  				  // SMTP password
+$resposta->SMTPSecure = 'tls';                   		  // Enable encryption, 'ssl' also accepted
+#$resposta->SMTPSecure = 'tls';                           // Enable encryption, 'ssl' also accepted
 
 $resposta->From = 'evertonferreira.de@gmail.com';
 $resposta->FromName = 'Everton Boni';
