@@ -19,17 +19,11 @@
 
   .menu{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    transition: 300ms ease-in-out all;
-  }
-
-  .menuFixed{
     position: fixed;
     z-index: 888;
-    background-color: $azulBrand;
     width: 100%;
-    height: 70px;
+    height: 100px;
     transition: 300ms ease-in-out all;
     flex-direction: row;
     -ms-flex-direction: row;
@@ -37,23 +31,19 @@
     -ms-justify-content: space-between;
   }
 
+  .menuBG{
+    background-color: rgba(32, 50, 100, 0.9);
+    height: 70px;
+  }
+
   .logo-evertonboni{
-    width:300px;
+    width:230px;
     margin: 0 auto;
-    margin-top: 40px;
-  }
-
-  .menuLitle{
-    width: 230px;
-  }
-
-  .menuScrollDown{
     margin: 10px;
   }
 
   nav{
-    margin: 0 auto;
-    margin-top: 100px;
+    margin: 10px;
     z-index: 999;
     transition: 300ms ease-in-out all;
   }
@@ -79,21 +69,6 @@
     }
   }
 
-  .menuFixed{
-    position: fixed;
-    z-index: 888;
-    background-color: $azulBrand;
-    width: 100%;
-    height: 100px;
-    flex-direction: row;
-    -ms-flex-direction: row;
-    -moz-flex-direction: row;
-    justify-content: space-between;
-    -ms-justify-content: space-between;
-    -moz-justify-content: space-between;
-    transform: transtale(100px, 90px);
-  }
-
   .menu-mobile{
     display:none;
   }
@@ -101,8 +76,9 @@
   @media screen and (min-width: 319px) and (max-width: 719px){
     .logo-evertonboni{ width: 200px; margin-left:10px;}
     nav{background-color: $azulBrand; width: 100%;}
-    nav ul li{display: flex; margin: 0; justify-content: center; background-color:  $brand-color; padding: 20px;}
-    nav{margin-top: 20px; display: none;}
+    nav ul li{margin: 0; justify-content: center; background-color:  $brand-color; padding: 20px; width: 100%;}
+    nav{margin-top: 140px; display: flex; width: 100%;}
+    .navMobile{display: flex;}
     .home{
       width: 100%;
       height: 100%;
@@ -111,7 +87,17 @@
       flex-direction: column;
       background-color: black;
     }
-    .menu-mobile{display: block; width: 20px; margin: 20px 20px 0 0;}
+    .menu-mobile{
+      display: block;
+      width: 60px;
+      height: 60px;
+      padding: 20px;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    .menu{justify-content: space-between;}
+    .logoMenu{width:100%}
     .menu-mobile path{fill: #fff;}
   }
 
@@ -120,17 +106,18 @@
     width: 100%;
     text-align: center;
     h1{
-      height: 250px;
+      height: 120px;
       width: 800px;
       position: absolute;
       left: 50%;
+      top: 50%;
       margin-left: -400px;
-      margin-top: 200px;
+      margin-top: -60px;
     }
   }
 
   @media (max-width:800px){
-    .homeCenter{h1{width:100%; padding:10px;}}
+    .homeCenter{h1{width:100%; padding:10px; height: auto;}}
   }
 
   @-webkit-keyframes setaDown{

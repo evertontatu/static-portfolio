@@ -21,7 +21,7 @@ $(function(){
 $(function(){
 
 	$('.menu-mobile').click(function() {
-		$('#nav').css('display', flex);
+		$(nav).addClass('navMobile');
 	})
 
 });
@@ -78,18 +78,13 @@ $(function(){
 $(function(){
 	var posicaoInicial = $('.homeCenter').position().top;
 
-	$(document).scroll(function () { // oscultador de scroll
+	$(document).scroll(function () {
     	var posicaoScroll = $(document).scrollTop(); // obtem a quantidade de scroll no momento
-    	console.log(posicaoScroll);
     	if (posicaoScroll > '170') {
-    		$('.menu').addClass('menuFixed');
-    		$('.logo-evertonboni').addClass('menuScrollDown').addClass('menuLitle');
-    		$('nav').addClass('menuScrollDown');
+    		$('.menu').addClass('menuBG');
     	}
     	if (posicaoScroll < '170') {
-    		$('.menu').removeClass('menuFixed');
-    		$('.logo-evertonboni').removeClass('menuScrollDown').removeClass('menuLitle');
-    		$('nav').removeClass('menuScrollDown');
+    		$('.menu').removeClass('menuBG');
     	}
 	});
 });
