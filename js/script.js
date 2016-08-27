@@ -21,7 +21,7 @@ $(function(){
 $(function(){
 
 	$('.menu-mobile').click(function() {
-		$('#nav').css('display', flex);
+		$(nav).addClass('navMobile');
 	})
 
 });
