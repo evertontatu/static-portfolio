@@ -78,9 +78,8 @@ $(function(){
 $(function(){
 	var posicaoInicial = $('.homeCenter').position().top;
 
-	$(document).scroll(function () { // oscultador de scroll
+	$(document).scroll(function () {
     	var posicaoScroll = $(document).scrollTop(); // obtem a quantidade de scroll no momento
-    	console.log(posicaoScroll);
     	if (posicaoScroll > '170') {
     		$('.menu').addClass('menuBG');
     	}
