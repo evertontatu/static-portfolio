@@ -94,10 +94,12 @@ $(function(){
 	$(document).scroll(function () {
     	var posicaoScroll = $(document).scrollTop(); // obtem a quantidade de scroll no momento
     	if (posicaoScroll > '170') {
-    		$('.menu').addClass('menuBG');
+				$('.menu').addClass('menuBG');
+    		$('.logoMenu').addClass('menuBG');
     	}
     	if (posicaoScroll < '170') {
-    		$('.menu').removeClass('menuBG');
+				$('.menu').removeClass('menuBG');
+    		$('.logoMenu').removeClass('menuBG');
     	}
 	});
 });
