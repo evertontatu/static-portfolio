@@ -6,8 +6,8 @@
     text-align: center;
     margin: 0 auto;
   }
-    @media screen and (min-width: 720px) and (max-width:999px) {
-      .wrapper-portfolio{width: 730px; margin: 0 auto;}
+    @media screen and (min-width: 320px) and (max-width:1139px) {
+      .wrapper-portfolio{width: 100%; margin: 0 auto;}
     }
 
   .portfolio{
