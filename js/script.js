@@ -20,10 +20,23 @@ $(function(){
 
 $(function(){
 
-	$('.menu-mobile').click(function() {
-		$(nav).addClass('navMobile');
+	$('.menu-mobile').click(function(e) {
+		e.stopPropagation();
+		toggleNav();
 	})
 
+	$('#main').click(function(e){
+		var target = $(e.target);
+		if(!target.closest('#nav').length && $('#nav').hasClass('navMobile')) toggleNav();
+	});
+
+	function toggleNav(){
+		if($('#nav').hasClass('navMobile')){
+			$('#nav').removeClass('navMobile');
+		}else{
+			$('#nav').addClass('navMobile');
+		}
+	}
 });
 
 

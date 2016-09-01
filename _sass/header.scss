@@ -75,9 +75,23 @@
 
   @media screen and (min-width: 319px) and (max-width: 719px){
     .logo-evertonboni{ width: 200px; margin-left:10px;}
-    nav{background-color: $azulBrand; width: 100%;}
-    nav ul li{margin: 0; justify-content: center; background-color:  $brand-color; padding: 20px; width: 100%;}
-    nav{margin-top: 140px; display: flex; width: 100%;}
+    nav{display: none; background-color: $azulBrand; width: 100%; margin: 0;}
+    nav ul{width:100%;}
+    nav ul li{margin: 0; justify-content: center; background-color:  $brand-color; padding: 5px; width: 100%;}
+    nav ul li a{
+      width: 100%;
+      display: block;
+      text-align: center;
+      padding: 20px;
+      margin: 0;
+      &:hover{
+        border-bottom: none;
+        background-color: lighten($azulBrand, 4);
+      }
+      &:hover:nav ul li{
+        background-color: red;
+      }
+    }
     .navMobile{display: flex;}
     .home{
       width: 100%;
@@ -96,7 +110,7 @@
         cursor: pointer;
       }
     }
-    .menu{justify-content: space-between;}
+    .menu{justify-content: space-between; flex-direction: column; height: auto}
     .logoMenu{width:100%}
     .menu-mobile path{fill: #fff;}
   }
