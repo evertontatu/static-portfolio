@@ -44,7 +44,8 @@ body {
   }
 
   h1{
-    font-size: 6em;
+    font-size: 3.6em;
+    letter-spacing: 5px;
     font-family: $font-brand-title;
     text-transform: uppercase;
   }
@@ -119,5 +120,5 @@ body {
   }
 
   @media screen and (min-width:320px) and (max-width:840px){
-    h1{font-size: 3.2em;}
+    h1{font-size: 2em;}
   }

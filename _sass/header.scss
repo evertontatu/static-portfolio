@@ -79,12 +79,13 @@
     text-align: center;
     h1{
       height: 120px;
-      width: 800px;
+      width: 600px;
       position: absolute;
       left: 50%;
       top: 50%;
-      margin-left: -400px;
+      margin-left: -300px;
       margin-top: -60px;
+      line-height: 1.8em;
     }
   }
 
@@ -133,7 +134,7 @@
   }
 
   @media (max-width:800px){
-    .homeCenter{h1{width:100%; padding:10px; height: auto; margin: 0 auto; left:0; top:50%; margin-top:-130px}}
+    .homeCenter{h1{width:100%; padding:10px; height: 50px; margin: 0 auto; left:0; top:60%; margin-top:-100px}}
   }
 
   @-webkit-keyframes setaDown{
