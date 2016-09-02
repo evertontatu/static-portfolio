@@ -23,7 +23,7 @@ $(function(){
 	$('.menu-mobile').click(function(e) {
 		e.stopPropagation();
 		toggleNav();
-	})
+	});
 
 	$('#main').click(function(e){
 		var target = $(e.target);
@@ -37,6 +37,7 @@ $(function(){
 			$('#nav').addClass('navMobile');
 		}
 	}
+
 });
 
 
@@ -94,12 +95,12 @@ $(function(){
 	$(document).scroll(function () {
     	var posicaoScroll = $(document).scrollTop(); // obtem a quantidade de scroll no momento
     	if (posicaoScroll > '170') {
-				$('.menu').addClass('menuBG').addClass('menuHeigth');
-				$('.logoMenu')addClass('menuHeigth');
+				$('.menu').addClass('menuBG','menuHeigth');
+				$('.logoMenu').addClass('menuHeigth');
     	}
     	if (posicaoScroll < '170') {
 				$('.menu').removeClass('menuBG');
-				$('.logoMenu')removeClass('menuHeigth');
+				$('.logoMenu').removeClass('menuHeigth');
     	}
 	});
 });
