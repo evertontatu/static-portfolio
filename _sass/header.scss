@@ -45,6 +45,58 @@
     margin: 10px;
   }
 
+  .parallax-home{
+      height: 600px;
+      position: relative;
+      background-image:  url(../images/bg-home.jpg);
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      overflow: hidden;
+      div{
+          position: absolute;
+          text-align: center;
+          top: 50%;
+          left: 50%;
+          height: 120px;
+          width: 550px;
+          margin-left: -225px;
+          margin-top: -60px;
+          h1{
+              font-family: $font-brand-title;
+              font-size: 5em;
+              color: #fff;
+              text-transform: uppercase;
+          }
+          p{
+                font-family: $font-brand-text;
+                font-size: 2em;
+                color: #fff;
+                text-transform: uppercase;
+                margin-top: 20px;
+                margin-bottom: 50px;
+                line-height: 1.6em;
+                font-weight: 600;
+          }
+          a{
+              padding: 20px 30px;
+              border: 3px solid $verdeBrand;
+              border-radius: 60px;
+              font-family: $font-brand-text;
+              color: $verdeBrand;
+              font-size: 2em;
+              font-weight: 600;
+              margin: 10px;
+              transition: 200ms all ease-in-out;
+              &:hover{
+                  background-color: $verdeBrand;
+                  color: #fff;
+                  cursor: pointer;
+              }
+          }
+      }
+  }
+
   nav{
     margin: 10px;
     z-index: 999;

@@ -10,12 +10,12 @@ $(function(){
 	});
 });
 
+//GET DEVICE HEIGHT
 $(function(){
 	var widthDevice = $(window).width();
 	var heightDevice = $(window).height();
 
 	$('.home').css('height', heightDevice);
-	$('.site-footer').css('height', heightDevice/2);
 });
 
 $(function(){
@@ -90,7 +90,7 @@ $(function(){
 
 //SCROLL MENU FIXED
 $(function(){
-	var posicaoInicial = $('.homeCenter').position().top;
+	var posicaoInicial = $('.menu').position().top;
 
 	$(document).scroll(function () {
     	var posicaoScroll = $(document).scrollTop(); // obtem a quantidade de scroll no momento
