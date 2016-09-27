@@ -1,39 +1,40 @@
-
-    <!-- The Modal -->
     <div id="myModal" class="modal" >
 
         <div class="modal-content" >
             <span class="close">×</span>
             <div class="modal-body">
-                <h1>Fale Conosco</h1>
+                <h1>Contato</h1>
                 <span class="envioForm">Mensagem enviada com sucesso <span>X</span></span>
 
                 <div class="loading">
-
                     <div class="loader" title="7">
                       {{ include loading-form.html }}
                     </div>
                 </div>
 
-                <form class="contactform"   name="contactform"  method="post" >
-                    <div class="form-group" >
+                <form class="contactform" name="contactform" method="post">
+                    <div class="form-group">
                         <div class="col-lg-10">
-                            <input type="text" class="form-control" id="inputName" name="inputName" placeholder="Nome" required>
+                            <label for="nome">Nome</label>
+                            <input type="text" class="form-control" id="inputName" name="inputName" placeholder="João Santos" required>
                         </div>
                     </div>
                     <div class="form-group" >
                         <div class="col-lg-10">
-                            <input type="text" class="form-control" id="inputTelefone" name="inputTelefone" placeholder="Telefone" required>
+                            <label for="telefone">Telefone</label>
+                            <input type="text" class="form-control" id="inputTelefone" name="inputTelefone" placeholder="(xx) xxxxx xxxx" required>
                         </div>
                     </div>
                     <div class="form-group" >
                         <div class="col-lg-10">
-                            <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="E-mail" required>
+                            <label for="email">E-mail</label>
+                            <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Escolha seu melhor e-mail" required>
                         </div>
                     </div>
                     <div class="form-group" >
                         <div class="col-lg-10">
-                            <textarea class="form-control" rows="4" id="inputMessage" name="inputMessage" placeholder="Mensagem" required></textarea>
+                            <label for="mensagem">Mensagem</label>
+                            <textarea class="form-control" rows="4" id="inputMessage" name="inputMessage" placeholder="Fale sobre o seu projeto" required></textarea>
                         </div>
                     </div>
                     <div class="form-group">
