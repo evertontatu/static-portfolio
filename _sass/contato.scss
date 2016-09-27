@@ -25,9 +25,41 @@
     width: 100%;
     padding:15px;
     margin-top:5px;
-    outline-color: $verdeBrand;
+    outline-color: $azulBrand;
     font-family: $font-brand-text;
+    color: $verdeBrand;
+    font-family: $font-brand-text;
+    text-transform: uppercase;
+    font-size: 15px;
+    &[type="submit"]{
+        padding: 20px;
+        background-color: $verdeBrand;
+        border: $verdeBrand;
+        color: #fff;
+    }
   }
+
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #454545;
+    font-family: $font-brand-text;
+    text-transform: uppercase;
+    font-size: 15px;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+      color: #454545;
+      font-family: $font-brand-text;
+      font-size: 15px;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+      color: #454545;
+      font-family: $font-brand-text;
+      font-size: 15px;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+      color: #454545;
+      font-family: $font-brand-text;
+      font-size: 15px;
+    }
 
 
   .modal {
@@ -39,7 +71,7 @@
       width: 100%;
       height: 100%;
       overflow: auto;
-      background-color: rgba(255,255,255,0.8)
+      background-color: rgba(0,0,0,0.8)
   }
 
   .modal-content {
@@ -48,7 +80,7 @@
     margin: auto;
     width: 400px;
     top:50%;
-    height: 500px;
+    height: 530px;
     margin-top: -250px;
     padding: 10px;
     overflow: auto;
@@ -70,7 +102,7 @@
   .modal-body{
     padding: 20px;
     h1{
-      color:$laranjaBrand;
+      color:$azulBrand;
     }
   }
 
