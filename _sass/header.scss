@@ -1,6 +1,6 @@
 //HEADER
   .home{
-    width: 100%;
+    width: 70%;
     height: 100%;
     display: flex;
     justify-content:flex-start;
@@ -14,7 +14,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 70px;
     transition: 300ms ease-in-out all;
   }
 
@@ -33,10 +33,6 @@
 
   .menuBG{
     background-color: rgba(32, 50, 100, 0.9);
-  }
-
-  .menuHeigth{
-    height: 70px;
   }
 
   .logo-evertonboni{

@@ -16,7 +16,10 @@ $(function(){
 	var widthDevice = $(window).width();
 	var heightDevice = $(window).height();
 
-	$('.home').css('height', heightDevice);
+	$('#sobre').css('height', heightDevice);
+	if(widthDevice < "720"){
+		$('#sobre').css('height', 'auto');
+	}
 });
 
 //CLICK MENU MOBILE
@@ -90,12 +93,10 @@ $(function(){
     	var posicaoScroll = $(document).scrollTop();
 
     	if (posicaoScroll > '170') {
-				$('.menu').addClass('menuBG','menuHeigth');
-				$('.logoMenu').addClass('menuHeigth');
+				$('.menu').addClass('menuBG');
     	}
     	if (posicaoScroll < '170') {
 				$('.menu').removeClass('menuBG');
-				$('.logoMenu').removeClass('menuHeigth');
     	}
 	});
 });
