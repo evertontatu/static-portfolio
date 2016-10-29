@@ -1,4 +1,4 @@
-//MENU NAV OPEN OR CLOSE DEPEND WIDTH DEVICE AND CLICK 
+//MENU NAV OPEN OR CLOSE DEPEND WIDTH DEVICE AND CLICK
 $(function(){
 	$('.nav-toggle').click(function() {
 		var altura = $('.nav ul').height();
