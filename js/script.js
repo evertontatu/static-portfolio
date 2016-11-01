@@ -16,7 +16,10 @@ $(function(){
 	var widthDevice = $(window).width();
 	var heightDevice = $(window).height();
 
+
+
 	$('#sobre').css('height', heightDevice);
+	console.log("teste");
 	if(widthDevice < "720"){
 		$('#sobre').css('height', 'auto');
 	}
