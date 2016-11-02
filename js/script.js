@@ -20,7 +20,7 @@ $(function(){
 
 	$('#sobre').css('height', heightDevice);
 	console.log("teste");
-	if(widthDevice < "720"){
+	if(widthDevice < "1020"){
 		$('#sobre').css('height', 'auto');
 	}
 });

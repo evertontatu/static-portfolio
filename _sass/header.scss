@@ -12,7 +12,7 @@
   .logoMenu{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 70px;
     transition: 300ms ease-in-out all;
@@ -27,8 +27,8 @@
     transition: 300ms ease-in-out all;
     flex-direction: row;
     -ms-flex-direction: row;
-    justify-content: space-between;
-    -ms-justify-content: space-between;
+    justify-content: center;
+    -ms-justify-content: center;
   }
 
   .menuBG{
@@ -147,7 +147,7 @@
   //BREAKPOINT
 
   @media screen and (min-width: 319px) and (max-width: 719px){
-    .logo-evertonboni{ width: 200px; margin-left:10px;}
+    .logo-evertonboni{ width: 290px; margin-left:10px;}
     nav{display: none; background-color: $azulBrand; width: 100%; margin: 0;}
     nav ul{width:100%;}
     nav ul li{margin: 0; justify-content: center; background-color: $brand-color; width: 100%;}
