@@ -60,3 +60,16 @@
   .icon-social:hover path{
       fill:$verdeBrand;
   }
+
+//transition content sobre
+.sobre{
+	overflow-x: hidden;
+}
+
+.sobre > article{
+	width: 200%;
+	position: relative;
+	left: 0%;
+	transition: all 600ms ease-in-out;
+	-webkit-transition: all 600ms ease-in-out;
+}

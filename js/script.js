@@ -25,6 +25,13 @@ $(function(){
 	}
 });
 
+//SLIDE TO CONTACT FORM
+$(function(){
+	$('.contact-form').click(function(){
+		$('.sobre > article').css('left','-100%');
+	});
+});
+
 //CLICK MENU MOBILE
 $(function(){
 
