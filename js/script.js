@@ -16,8 +16,6 @@ $(function(){
 	var widthDevice = $(window).width();
 	var heightDevice = $(window).height();
 
-
-
 	$('#sobre').css('height', heightDevice);
 	console.log("teste");
 	if(widthDevice < "1020"){
@@ -29,6 +27,9 @@ $(function(){
 $(function(){
 	$('.contact-form').click(function(){
 		$('.sobre > article').css('left','-100%');
+	});
+	$('.back-form').click(function(){
+		$('.sobre > article').css('left','50%');
 	});
 });
 

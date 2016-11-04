@@ -8,6 +8,11 @@
     align-items: center;
     background: url(../images/bg-sobre.jpg) center top no-repeat $azulBrand;
     background-size: cover;
+    article{
+        float: left;
+        width: 100%;
+        position: relative;
+    }
   }
 
   .flex-center{
@@ -69,7 +74,13 @@
 .sobre > article{
 	width: 200%;
 	position: relative;
-	left: 0%;
+	left: 0;
 	transition: all 600ms ease-in-out;
 	-webkit-transition: all 600ms ease-in-out;
+}
+
+.slide-sobre{
+    float: left;
+    width: 100%;
+    position: relative;
 }
