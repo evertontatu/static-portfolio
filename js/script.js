@@ -26,7 +26,7 @@ $(function(){
 //SLIDE TO CONTACT FORM
 $(function(){
 	$('.contact-form').click(function(){
-		$('.sobre > article').css('left','-100%');
+		$('.sobre > article').css('left','-50%');
 	});
 	$('.back-form').click(function(){
 		$('.sobre > article').css('left','50%');
