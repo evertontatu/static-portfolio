@@ -1,6 +1,6 @@
 //CONTATO
 .wrapper-contact{
-  width: 500px;
+  width: 400px;
   float: none;
   display: block;
   margin: 0 auto;
@@ -8,11 +8,15 @@
       color: #fff;
       font-family: $font-brand-text;
       text-align: center;
+      letter-spacing: 0;
+      margin-bottom: 40px;
   }
 }
 
-@media screen and (max-width:501px) and (min-width:0px){
-    width: 100%;
+@media screen and (max-width:401px) and (min-width:0px){
+    .wrapper-contact{
+        width: 100%;
+    }
 }
 
   .contato{
@@ -42,8 +46,8 @@
     font-family: $font-brand-text;
     color: #fff;
     font-family: $font-brand-text;
-    text-transform: uppercase;
-    font-size: 15px;
+    font-size: 1.8em;
+    letter-spacing: 1px;
     background-color: rgba(0,0,0,0.0);
     &[type="submit"]{
         padding: 18px 35px 15px 35px;
@@ -60,6 +64,9 @@
         border-bottom: 3px solid darken($verdeBrand, 10%);
         outline: none;
         transition: 200ms all ease-in-out;
+    }
+    &:focus{
+        border: 1px solid $verdeBrand;
     }
   }
 
@@ -91,8 +98,9 @@
 
   .form-group div label{
       font-family: $font-brand-text;
-      color: rgba(255,255,255,0.6);
-      font-size: 1.8em;
+      color: rgba(255,255,255,1);
+      font-size: 1.6em;
+      letter-spacing: 1px;
       text-transform: uppercase;
   }
 
