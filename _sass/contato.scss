@@ -38,7 +38,7 @@
 
   input, textarea{
     width: 100%;
-    padding:17px 15px 15px 15px;
+    padding:12px 10px 10px 10px;
     margin-top:5px;
     border: solid 1px rgba(255,255,255,0.6);
     border-radius: 5px;
@@ -49,7 +49,12 @@
     font-size: 1.8em;
     letter-spacing: 1px;
     background-color: rgba(0,0,0,0.0);
+    &:focus{
+        border: 1px solid $verdeBrand;
+    }
     &[type="submit"]{
+        width: auto;
+        float: right;
         padding: 18px 35px 15px 35px;
         background-color: $verdeBrand;
         color: white;
@@ -59,14 +64,15 @@
         font-size: 1.6em;
         line-height: 1.6em;
         letter-spacing:2px;
-        float: left;
         border-radius: 200px;
         border-bottom: 3px solid darken($verdeBrand, 10%);
         outline: none;
         transition: 200ms all ease-in-out;
-    }
-    &:focus{
-        border: 1px solid $verdeBrand;
+        &:hover{
+          background-color: lighten( $verdeBrand ,10%);
+          border-bottom: 3px solid $verdeBrand;
+          cursor:pointer;
+        }
     }
   }
 
@@ -152,4 +158,15 @@
 
   .loader svg rect{
     fill: #21b25b;
+  }
+
+  .back-form{
+      color: #fff;
+      font-family: $font-brand-text;
+      font-size: 1.5em;
+      float: left;
+      margin-top: 20px;
+      &:hover{
+        color: $verdeBrand;
+      }
   }

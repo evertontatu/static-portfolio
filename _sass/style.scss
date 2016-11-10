@@ -111,12 +111,11 @@ body {
     border-bottom: 3px solid darken($verdeBrand, 10%);
     outline: none;
     transition: 200ms all ease-in-out;
-  }
-
-  button:hover{
-    background-color: lighten( $verdeBrand ,10%);
-    border-bottom: 3px solid $verdeBrand;
-    cursor:pointer;
+    &:hover{
+      background-color: lighten( $verdeBrand ,10%);
+      border-bottom: 3px solid $verdeBrand;
+      cursor:pointer;
+    }
   }
 
   @media screen and (min-width:320px) and (max-width:840px){
