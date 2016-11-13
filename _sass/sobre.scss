@@ -34,8 +34,9 @@
   }
 
   .box-social-icon{
-    border: 3px white solid;
-    height: 430px;
+    border: 3px $verdeBrand solid;
+    height: 330px;
+    width: 80px;
     padding: 10px;
     display: flex;
     border-radius: 200px;
@@ -48,13 +49,13 @@
   }
 
   .icon-social{
-    width: 50px;
+    width: 40px;
     transform: scaleX(1.0);
     transition: 200ms ease-in-out all;
   }
 
   .icon-social path{
-    fill:white;
+    fill:$greyColorClean;
     transition: 200ms ease-in-out all;
   }
 
