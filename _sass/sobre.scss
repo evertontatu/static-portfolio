@@ -25,7 +25,7 @@
   .perfil img{
     width:100%;
     border-radius: 50%;
-    border: $laranjaBrand 4px solid;
+    border: $blueColor 4px solid;
     margin-bottom: 10px;
   }
 
@@ -34,7 +34,7 @@
   }
 
   .box-social-icon{
-    border: 3px $verdeBrand solid;
+    border: 3px $blueColor solid;
     height: 330px;
     width: 80px;
     padding: 10px;
@@ -64,7 +64,7 @@
   }
 
   .icon-social:hover path{
-      fill:$verdeBrand;
+      fill:$blueColor;
   }
 
 //transition content sobre

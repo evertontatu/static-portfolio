@@ -60,8 +60,7 @@
     }
     &[type="submit"]{
         width: auto;
-        float: right;
-        padding: 18px 35px 15px 35px;
+        padding: 13px 25px 10px 25px;
         background-color: $verdeBrand;
         color: white;
         border: none;
@@ -70,6 +69,7 @@
         font-size: 1.6em;
         line-height: 1.6em;
         letter-spacing:2px;
+        float: right;
         border-radius: 200px;
         border-bottom: 3px solid darken($verdeBrand, 10%);
         outline: none;
