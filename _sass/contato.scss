@@ -46,7 +46,7 @@
     width: 100%;
     padding:12px 10px 10px 10px;
     margin-top:5px;
-    border: solid 1px $blueColor;
+    border: solid 1px $greyColorClean;
     border-radius: 5px;
     outline-color: rgba(200,200,200,0.5);
     font-family: $font-brand-text;
@@ -55,9 +55,9 @@
     font-size: 1.8em;
     letter-spacing: 1px;
     background-color: rgba(0,0,0,0.0);
-    box-shadow: inset 10px, 10px, 10px, 10px, #454545;
+    box-shadow: inset 10px, 10px, 10px, #454545;
     &:focus{
-        border: solid 1px $verdeBrand;
+        border: solid 1px $blueColor;
     }
     &[type="submit"]{
         width: auto;
@@ -112,7 +112,7 @@
   .form-group label{
       font-family: $font-brand-text;
       color: $blueColor;
-      font-size: 1.6em;
+      font-size: 1.2em;
       letter-spacing: 1px;
       text-transform: uppercase;
   }
@@ -175,5 +175,18 @@
       margin-top: 20px;
       &:hover{
         color: $verdeBrand;
+      }
+  }
+
+  .flex-contato{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      div:first-child{
+          width: 60%;
+      }
+      div:last-child{
+          width: 40%;
       }
   }
