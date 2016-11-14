@@ -3,7 +3,7 @@ a:hover{text-decoration:none; color:inherit;}
 a:active{text-decoration:none; color:inherit;}
 
 ::selection {
-  background: $laranjaBrand;
+  background: $greyColor;
   color: #fff;
 }
 
@@ -12,14 +12,14 @@ body {
 }
 
 .wrapper{
-  width: 960px;
+  width: 990px;
   float: none;
   display: block;
   text-align: center;
   margin: 0 auto;
 }
 
-@media(max-width:960px){
+@media(max-width:990px){
   .wrapper{width: 100%; padding:10px;}
   .box-position-center{}
 }
@@ -70,6 +70,7 @@ body {
     width: 40px;
     height: 4px;
     border-radius: 5px;
+    top: 0;
     background-color: $blueColor;
   }
 

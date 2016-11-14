@@ -34,10 +34,11 @@
   }
 
   .box-social-icon{
-    border: 3px $blueColor solid;
+    border: 3px $greyColorClean solid;
     height: 330px;
     width: 80px;
     padding: 10px;
+    margin-top: 56px;
     display: flex;
     border-radius: 200px;
     flex-direction: column;
