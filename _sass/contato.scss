@@ -84,25 +84,24 @@
   }
 
     ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: #898989;
+    color: #959595;
     font-family: $font-brand-text;
-    text-transform: uppercase;
-    font-size: 15px;
+    font-size: 13px;
     }
     ::-moz-placeholder { /* Firefox 19+ */
-      color: #898989;
+      color: #959595;
       font-family: $font-brand-text;
-      font-size: 15px;
+      font-size: 13px;
     }
     :-ms-input-placeholder { /* IE 10+ */
-      color: #898989;
+      color: #959595;
       font-family: $font-brand-text;
-      font-size: 15px;
+      font-size: 13px;
     }
     :-moz-placeholder { /* Firefox 18- */
-      color: #898989;
+      color: #959595;
       font-family: $font-brand-text;
-      font-size: 15px;
+      font-size: 13px;
     }
 
   .form-group{
@@ -113,8 +112,9 @@
       font-family: $font-brand-text;
       color: $blueColor;
       font-size: 1.2em;
-      letter-spacing: 1px;
-      text-transform: uppercase;
+      text-align: left;
+      width: 100%;
+      float: left;
   }
 
   .envioForm{
@@ -183,10 +183,10 @@
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      div:first-child{
+      & > div:first-child{
           width: 60%;
       }
-      div:last-child{
+      & > div:last-child{
           width: 40%;
       }
   }

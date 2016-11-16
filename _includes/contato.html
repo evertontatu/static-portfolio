@@ -3,32 +3,32 @@
 
     </div>
     <div>
+        <span class="envioForm">Mensagem enviada com sucesso <span>X</span></span>
 
+        <div class="loading">
+            <div class="loader" title="7">
+              {{ include loading-form.html }}
+            </div>
+        </div>
+
+        <form class="contactform" name="contactform" method="post">
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="inputName" name="inputName" placeholder="Seu nome completo" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="nome@empresa.com" required>
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea class="form-control" rows="4" id="inputMessage" name="inputMessage" placeholder="Conte o motivo do contato" required></textarea>
+            </div>
+            <div class="form-group">
+                <a href="#" class="back-form">< Voltar</a>
+                <input type="submit" value="ENVIAR" /><br />
+            </div>
+        </form>
     </div>
-    <span class="envioForm">Mensagem enviada com sucesso <span>X</span></span>
 
-    <div class="loading">
-        <div class="loader" title="7">
-          {{ include loading-form.html }}
-        </div>
-    </div>
-
-    <form class="contactform" name="contactform" method="post">
-        <div class="form-group">
-            <label for="nome">Nome</label>
-            <input type="text" class="form-control" id="inputName" name="inputName" placeholder=" " required>
-        </div>
-        <div class="form-group">
-            <label for="email">E-mail</label>
-            <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder=" " required>
-        </div>
-        <div class="form-group">
-            <label for="mensagem">Mensagem</label>
-            <textarea class="form-control" rows="4" id="inputMessage" name="inputMessage" placeholder=" " required></textarea>
-        </div>
-        <div class="form-group">
-            <a href="#" class="back-form">< Voltar</a>
-            <input type="submit" value="ENVIAR" /><br />
-        </div>
-    </form>
 </div>

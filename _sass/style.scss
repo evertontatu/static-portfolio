@@ -56,10 +56,9 @@ body {
 
   h2{
     font-size: 3em;
-    font-family: $font-brand-title;
-    text-transform: uppercase;
+    font-family: $font-brand-text;
     color: $blueColor;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     letter-spacing: 2px;
     text-align: left;
   }
@@ -71,10 +70,8 @@ body {
   p{
     font-family: $font-brand-text;
     color: $greyColor;
-    font-size: 1.6em;
-    letter-spacing: 1px;
+    font-size: 1.8em;
     text-align: left;
-    text-transform: uppercase;
     line-height: 1.8em;
     margin-bottom:25px;
   }
