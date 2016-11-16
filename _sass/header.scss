@@ -24,7 +24,7 @@
     position: fixed;
     z-index: 888;
     width: 100%;
-    background-color: $blueColor;
+    background-color: #000;
     transition: 300ms ease-in-out all;
     flex-direction: row;
     -ms-flex-direction: row;
@@ -37,7 +37,7 @@
   }
 
   .logo-evertonboni{
-    width:300px;
+    width:200px;
     margin: 0 auto;
     margin: 10px;
   }

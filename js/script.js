@@ -16,11 +16,10 @@ $(function(){
 	var widthDevice = $(window).width();
 	var heightDevice = $(window).height();
 
-	$('#sobre').css('height', heightDevice);
-	console.log("teste");
-	if(widthDevice < "1020"){
-		$('#sobre').css('height', 'auto');
-	}
+	//$('#sobre').css('height', heightDevice);
+	//if(widthDevice < "1020"){
+	//	$('#sobre').css('height', 'auto');
+	//}
 });
 
 //SLIDE TO CONTACT FORM
