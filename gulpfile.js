@@ -4,6 +4,7 @@ var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 var concat      = require('gulp-concat');
+var rename      = require('gulp-rename');
 var uglify      = require('gulp-uglify');
 var minifyCss   = require('gulp-minify-css');
 var imageop = require('gulp-image-optimization');
@@ -57,8 +58,10 @@ gulp.task('sass', function () {
 });
 
 gulp.task('scripts', function () {
-  gulp.src('js/**/*.js')
+  gulp.src('js/*.js')
     .pipe(concat('script.js'))
+    .pipe(gulp.dest('_site/js'))
+    .pipe(rename('uglify.js'))
     .pipe(uglify())
     .pipe(browserSync.reload({stream:true}))
     .pipe(gulp.dest('_site/js'));
