@@ -73,28 +73,6 @@ $(document).ready(function(){
     });
 });
 
-
-//MODAL CONTACT
-$(function(){
-	var modal = document.getElementById('myModal');
-	var btn = document.getElementById("myBtn");
-	var span = document.getElementsByClassName("close")[0];
-
-	btn.onclick = function() {
-	    modal.style.display = "block";
-	}
-
-	span.onclick = function() {
-	    modal.style.display = "none";
-	}
-
-	window.onclick = function(event) {
-	    if (event.target == modal) {
-	        modal.style.display = "none";
-	    }
-	}
-});
-
 //SCROLL MENU FIXED
 $(function(){
 	var posicaoInicial = $('.menu').position().top;
@@ -109,54 +87,4 @@ $(function(){
 				$('.menu').removeClass('menuBG');
     	}
 	});
-});
-
-//FORM CONTACT
-$(function(){
-
-	$(document).ready(function(){
-      /*desabilita o submit do form*/
-      $(".contactform").submit(function(){
-        return false;
-      });
-    });
-
-    $(document).ready(function(){
-        $('input[type=submit]').click(function(){
-            var nome  = $("#inputName").val();
-            var telefone  = $("#inputTelefone").val();
-            var email  = $("#inputEmail").val();
-            var message  = $("#inputMessage").val();
-            var    er = /^[a-zA-Z0-9][a-zA-Z0-9\._-]+@([a-zA-Z0-9\._-]+\.)[a-zA-Z-0-9]{2}/;
-
-            if( nome==''){
-            } else if( telefone==''){
-            } else if(email==''){
-            } else if(message==''){
-
-            }else{
-            $(".loading").css("display","block");
-                $.ajax({
-                    type:'POST',
-                    url:'submit.php',
-                    data:{
-                        nome:nome,
-                        telefone:telefone,
-                        email:email,
-                        message:message
-                    },
-                    success:function(data){
-                        $(".loading").css("display","none");
-                        $(".envioForm").css("display","block");
-                        $(".contactform")[0].reset();
-                        //    $(".modal-body span").addClass("formEnviado");
-                        //    enviado();
-                    }, error:function(){
-
-                    }
-                });
-            }
-        });
-    });
-
 });
