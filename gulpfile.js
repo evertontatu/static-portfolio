@@ -33,7 +33,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 /**
  * Wait for jekyll-build, then launch the Server
  */
-gulp.task('browser-sync', ['sass', 'scripts', 'jekyll-build'], function() {
+gulp.task('browser-sync', ['sass', 'jekyll-build', 'scripts'], function() {
     browserSync({
         server: {
             baseDir: '_site'
@@ -58,10 +58,10 @@ gulp.task('sass', function () {
 });
 
 gulp.task('scripts', function () {
-  gulp.src('js/*.js')
+  gulp.src('js/**/*.js')
     .pipe(concat('script.js'))
     .pipe(gulp.dest('_site/js'))
-    .pipe(rename('uglify.js'))
+    .pipe(rename('main.js'))
     .pipe(uglify())
     .pipe(browserSync.reload({stream:true}))
     .pipe(gulp.dest('_site/js'));
