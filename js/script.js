@@ -88,3 +88,50 @@ $(function(){
     	}
 	});
 });
+
+//FORM CONTACT
+$(function(){
+
+	$(document).ready(function(){
+      /*desabilita o submit do form*/
+      $(".contactform").submit(function(){
+        return false;
+      });
+    });
+
+    $(document).ready(function(){
+        $('input[type=submit]').click(function(){
+            var nome  = $("#inputName").val();
+            var email  = $("#inputEmail").val();
+            var message  = $("#inputMessage").val();
+            var    er = /^[a-zA-Z0-9][a-zA-Z0-9\._-]+@([a-zA-Z0-9\._-]+\.)[a-zA-Z-0-9]{2}/;
+
+            if( nome==''){
+            } else if(email==''){
+            } else if(message==''){
+
+            }else{
+            $(".loading").css("display","block");
+                $.ajax({
+                    type:'POST',
+                    url:'submit.php',
+                    data:{
+                        nome:nome,
+                        email:email,
+                        message:message
+                    },
+                    success:function(data){
+                        $(".loading").css("display","none");
+                        $(".envioForm").css("display","block");
+                        $(".contactform")[0].reset();
+                        //    $(".modal-body span").addClass("formEnviado");
+                        //    enviado();
+                    }, error:function(){
+
+                    }
+                });
+            }
+        });
+    });
+
+});
